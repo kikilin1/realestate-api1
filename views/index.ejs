@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Horizontal Application Form - Template Monster Demo</title>
+  <meta name="author" content="kl">
+
+          <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+    
+    <!-- Font awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">   
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">     
+
+    <!-- Main style sheet -->
+    <link href="css/style.css" rel="stylesheet">    
+
+   
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+    
+    
+  
+</head>
+    <body ng-app>
+                <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" 
+                            data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     
+      
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Rent</a></li>
+          <li><a href="#">Sell</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+                <div class="container page-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    
+                    <img src="img/lou.jpg" alt="lou" class="img-responsive">
+                    <div class="box"><span>All you need to sell your home and save!</span></div>
+
+                </div>
+            </div>
+        </div><!--end div-->
+        
+        
+                        <div class="container page-content">
+            <div class="row">
+                <div class="col-xs-12">
+
+         <form action="/forsale" method="post" >
+              <div class="col-2">
+                <label>
+                   Property Name
+                  <input placeholder="What is your property name?" id="name" name="name" tabindex="1">
+                </label>
+              </div>
+              <div class="col-2">
+                <label>
+                  Address
+                  <input placeholder="Where is the property located?" id="address" name="address" tabindex="2">
+                </label>
+              </div>
+
+              <div class="col-3">
+                <label>
+                  Phone Number
+                  <input placeholder="What is the best # to reach you?" id="phone" name="phone" tabindex="3">
+                </label>
+              </div>
+              <div class="col-3">
+                <label>
+                  Email
+                  <input placeholder="What is your e-mail address?" id="email" name="email" tabindex="4">
+                </label>
+              </div>
+              <div class="col-3">
+                <label>
+                  Property Type
+                  <select  name="property-type" tabindex="5">
+                    <option value="single-family">Single-Family Home</option>
+                    <option value="apartment/condo/townhouse">Apartment/Condo/Townhouse</option>
+                    <option value="apartment-community">Apartment Community</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="col-4">
+                <label>
+                  Price
+                  <input placeholder="Asking Price" id="price" name="price" tabindex="6">
+                </label>
+              </div>
+              <div class="col-4">
+                <label>
+                  Square Footage
+                  <input placeholder="How many square foot is your property?" id="sft" name="sft" tabindex="7">
+                </label>
+              </div>
+              <div class="col-4">
+                  <label>
+                  beds
+                  <select tabindex="6" id="beds" name="beds">
+                      <option value="1">1 bed</option>
+                      <option value="2">2 beds</option>
+                      <option value="3">3 beds</option>
+                      <option value="4">4 beds</option>
+                      <option value="5">5 beds</option>
+                      <option value="6">6 beds</option>
+                      <option value="7">7 beds</option>
+                      <option value="8">8 beds</option>
+                      
+                  </select>
+                </label>
+                 
+              </div>
+              <div class="col-4 switch">
+                <label>
+                  Baths
+                  <select tabindex="6" id="baths" name="baths" > 
+                      <option value="1">1 bath</option>
+                      <option value="2">2 baths</option>
+                      <option value="3">3 baths</option>
+                      <option value="4">4 baths</option>
+                      <option value="5">5 baths</option>
+                      <option value="6">6 baths</option>
+                      <option value="7">7 baths</option>
+                      <option value="8">8 baths</option>
+                      
+                  </select>
+                </label>
+              </div>
+             <div class="col-2">
+                <label>
+                  Description
+                  <input placeholder="Describe your property" id="description" name="decription" tabindex="7">
+                </label>
+             
+             </div>
+             <div class="col-2">
+                 <label>Property pictures
+                     <input  placeholder="Upload your property pictures" id="img" name="img" tabindex="7" type="image">
+                 
+                 </label>
+             
+             
+             </div>
+
+              <div class="col-submit">
+                <button class="submitbtn">Submit Form</button>
+              </div>
+
+        </form>
+                                    </div>
+            </div>
+       
+        
+                    <div class="aa-properties-content-body">
+                        <div class="row">
+                            
+                                
+                            
+
+                            
+              <ul class="aa-properties-nav" style="display:inline" >
+                  <div class="col-md-4">
+                  <% for(var i=0; i<quotes.length; i++) {%>
+                <li class="forsale">
+                  <article class="aa-properties-item">
+                    <a class="aa-properties-item-img" href="#">
+                      <img alt="img" src="img/item/1.jpg">
+                    </a>
+                    <div class="aa-tag for-sale">
+                      For Sale
+                    </div>
+                    <div class="aa-properties-item-content">
+                        
+                      <div class="aa-properties-info">
+                          <h3><a href="#"><%= quotes[i].name %></a></h3>
+                        <span>Beds:<%= quotes[i].beds %></span>
+                        <span>Baths:<%= quotes[i].baths %></span>
+                        <span>Sft:<%= quotes[i].sft %></span>
+                      </div>
+                      <div class="aa-properties-about">
+                        
+                        <p>Description<%= quotes[i].description %></p>                      
+                      </div>
+                      <div class="aa-properties-detial">
+                        <span class="aa-price">
+                         Price<%= quotes[i].price %>
+                        </span>
+                        <a class="aa-secondary-btn" href="#">View Details</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                
+                <% } %>
+                
+                </div>
+                                    
+              </ul>
+            </div>
+                                                        
+                        
+                        
+                        </div>
+            <!-- Start properties content bottom -->
+            <div class="aa-properties-content-bottom">
+              <nav>
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li class="active"><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+ </div><!--end div-->
+  <!-- / Properties  -->
+    
+    </body>
+           
+            
+    
+
+</html>
